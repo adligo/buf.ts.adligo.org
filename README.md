@@ -1,2 +1,2 @@
-# buf.ts.adligo.org
-A package for buffering, i.e. StringBuffers, ByteBuffers etc.
+# io.ts.adligo.org
+A package for IO wrappers, buffering, i.e. StringBuffers, ByteBuffers etc.

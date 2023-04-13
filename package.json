@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "lockfileVersion": 3,
+  "main": "dist/io",
+  "name": "@ts.adligo.org/io",
+  "packages": {
+    "": {
+      "name": "@ts.adligo.org/io",
+      "license": "Apache-2.0",
+      "devDependencies": {
+        "typescript": "^5.0.4"
+      }
+    }
+  },
+  "scripts": {
+    "test": "echo TODO for now thats a pass :)- ",
+    "tsc": "tsc"
+  },
+  "types": "src/io.ts",
+  "version": "0.0.1"
+}

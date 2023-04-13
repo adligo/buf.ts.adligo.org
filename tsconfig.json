@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "ES5",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "./dist",
+    "rootDirs": ["./src", "./tests"],
+    "preserveConstEnums": true,
+    "sourceMap": true
+  },
+  "files": ["./src/io.ts"],
+  "exclude": ["node_modules"]
+}

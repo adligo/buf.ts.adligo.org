@@ -77,6 +77,13 @@ class StringChunk {
     }
   }
   
+  public getNext() : StringChunk {
+    if (this.next == undefined) {
+      throw Error('IllegalStateException this.next MUST NOT be null at this point!');
+    }
+    return (this.next as StringChunk);
+  }
+  
   public hasNext(): boolean {
     if (this.next == undefined) {
       return false;
@@ -99,6 +106,12 @@ class StringChunk {
     return chars;
   }
 }
+
+/**
+ * Similar in function to Java's StringBuilder
+ * it doesn't use only an array under the hood,
+ * so large strings will perform slightly faster.
+ */
 export class StringBuilder {
   private first: StringChunk;
   private last: StringChunk;
@@ -111,5 +124,13 @@ export class StringBuilder {
     this.last = this.last.append(chars);
     return this;
   }
-  
+  public toString(): string {
+    var chars = '';
+    var next: StringChunk = this.first;
+    while(next.hasNext()) {
+      chars = chars.concat(next.toString());
+      next = next.getNext();
+    }
+    return chars;
+  }
 }

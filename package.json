@@ -20,5 +20,5 @@
   },
   "type": "module",
   "types": "src/io.ts",
-  "version": "0.0.5"
+  "version": "0.0.6"
 }

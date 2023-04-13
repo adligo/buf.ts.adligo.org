@@ -10,6 +10,6 @@
     "preserveConstEnums": true,
     "sourceMap": true
   },
-  "files": ["./src/io.ts"],
+  "files": ["./src/io.mts"],
   "exclude": ["node_modules"]
 }
